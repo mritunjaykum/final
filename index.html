@@ -5,6 +5,11 @@
 alert("welcome");
 confirm("are you argree");
 prompt("please enter your name");
+  function cue()
+{
+var n=document.getElementById("a").value;
+document.write("cube"+"="+n*n*n);
+}
 function bg()
 {
 document.bgColor="pink";
@@ -16,7 +21,10 @@ open("https://youtube.com/shorts/i6oeDCXxbGM?si=O7j5-5GoydOYxsC3");
 </script>
 </head>
 <body>
+  <input type="number" id="a">
+<button type="button" onclick="cue()">cube</button><br><br>
 <button type="button" onclick="bg()">chage background color</button>
 <button type="button" onclick="yt()">premanand maharaj ka video</button>
 </body>
+
 </html>
