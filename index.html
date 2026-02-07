@@ -2,39 +2,77 @@
 <head>
 <title>java script</title>
 <script>
-alert("welcome");
+alert("welcome to my frist website");
 confirm("are you argree");
 prompt("please enter your name");
-function sum()
+
+
+function sum1()
 {
-var a2=parseInt(document.getElementById("x").value);
-var b2=parseInt(document.getElementById("y").value);
-var s2=a2+b2;
-document.getElementById("d1").innerHTML=s2;
+    var a1=parseInt(document.getElementById("x1").value);
+    var b1=parseInt(document.getElementById("y1").value);
+    var sum1=a1+b1;
+    document.getElementById("d1").innerHTML=sum1;
 }
-function cue()
+
+
+function cue2()
 {
-var n=document.getElementById("a").value;
-var cb=n*n*n;
-document.getElementById("d2").innerHTML=cb;
+    var n2=document.getElementById("a2").value;
+    var cube2=n2*n2*n2;
+    document.getElementById("d2").innerHTML=cube2;
 }
-function bg()
+
+
+function bg3()
 {
-document.bgColor="pink";
+        document.bgColor="yellow";
 }
-function yt()
+
+
+function yt4()
 {
-open("https://youtube.com/shorts/i6oeDCXxbGM?si=O7j5-5GoydOYxsC3");
+    open("https://youtube.com/shorts/i6oeDCXxbGM?si=O7j5-5GoydOYxsC3");
+}
+
+
+function bulb5()
+{
+     document.getElementById("b5").src="bon.png";
+}
+
+
+function bulb6()
+{
+     document.getElementById("b5").src="boff.png";
+}
+
+function bulb7(x7)
+{
+    x7.style.width="400px";
+   x7.style.height="700px";
+}
+
+
+
+function bulb8(x8)
+{
+    x8.style.width="50px";
+   x8.style.height="100px";
 }
 </script>
 </head>
 <body> 
-<input type="number" id="a">
-<button type="button" onclick="cue()">cube</button><p id="d2"></p>
-<input type="number" id="x">
-<input type="number" id="y">
-<button type="button" onclick="sum()">sum</button><p id="d1"></p><br>
-<button type="button" onclick="bg()">chage background color pink</button><br><br>
-<button type="button" onclick="yt()">premanand maharaj ka video</button><br><br>
+<input type="number" id="x1"><br>
+<input type="number" id="y1"><br>
+<button type="button" onclick="sum1()">sum</button><p id="d1"></p><br>
+<input type="number" id="a2"><br>
+<button type="button" onclick="cue2()">cube</button><p id="d2"></p><br>
+<button type="button" onclick="bg3()">chage background color pink</button><br><br>
+<button type="button" onclick="yt4()">premanand maharaj ka video</button><br><br>
+<img src="boff.png" id="b5">
+<button type="button" onclick="bulb5()">click here to on</button>
+<button type="button" onclick="bulb6()">click here to off</button><br><br><br><br>
+<img src="bon.png" width="50" height="100" onmouseover="bulb7(this)"  onmouseout="bulb8(this)">
 </body>
 </html>
